@@ -1,0 +1,29 @@
+<div class="container float-right">
+<h1>name {{name}} </h1>
+<h1>age {{age}} </h1>
+<h1> address:  {{address.street}} </h1>
+<h1> pincode:  {{address.pincode}}</h1>
+<button (click) = 'onClick()'>Click me Babe</button>
+<ul>
+  <li *ngFor="let nam of name">
+    {{ nam }}
+  </li>
+</ul>
+
+<form (submit)="addHobby(hobby.value)">
+
+<label for="hobby">Hobby</label>
+<input type="text" #hobby>
+
+</form>
+
+
+<form action="">
+  <label for="text" >Name</label>
+  <input type="number" name="age" [(ngModel)]="age">
+</form>
+
+
+</div>
+
+
